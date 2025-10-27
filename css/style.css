@@ -10,10 +10,15 @@
   background: #ff3131;
   color: #fff;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Exo", sans-serif;
   background: #fff085;
+    border-top: #000 2px solid;
+    border-right:#000 2px solid;
+
 }
 .container {
   margin: 0 auto;
@@ -60,14 +65,12 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background-color: #fff;
   border: 2px solid #000;
   box-shadow: 3px 3px 0 #000, 0 0 15px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
-  border: 2px solid #000;
-  padding: 14px 24px;
+  padding: 10px 20px;
   width: 80%;
-  margin: 0 auto;
   position: fixed;
   top: 20px;
   left: 50%;
@@ -124,6 +127,8 @@ ul {
 .subscribe-btn:hover {
   transform: translate(3px, 3px);
 }
+
+
 
 /*******start with hero section */
 
@@ -641,7 +646,7 @@ ul {
 .authors-section {
   background-color: #ffd230;
   padding: 80px 0;
-  border-top: 4px solid #000;
+  border-top: 3px solid #000;
 }
 
 .authors-header {
@@ -812,7 +817,7 @@ ul {
 .rebellion-section {
   background-color: #f5f5f5;
   padding: 80px 0;
-  border-top: 4px solid #000;
+  border-top: 3px solid #000;
 }
 .rebellion-content {
   display: flex;
@@ -970,4 +975,177 @@ ul {
 .rebellion-content .left-col img {
   width: 10%;
   border: 2px solid #000;
+}
+
+/* end with rebellion section  */
+
+/****** start with footer section  */
+footer.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0 40px;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col.about {
+  flex: 1 1 300px;
+}
+
+.icon-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-footer span {
+  background: #fff;
+  color: #000;
+  padding: 15px 18px;
+  font-size: 26px;
+  border-radius: 1px;
+}
+
+.icon-footer h1 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.footer-col.about p {
+  color: #fff;
+  line-height: 29px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.footer-col.categories h4 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-col.categories ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col.categories ul li a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  transition: all 0.3s;
+}
+
+.footer-col.categories ul li a:hover {
+  color: #ffea00;
+}
+
+.footer-col.newsletter{
+  flex: 1 1 300px;
+}
+.footer-col.newsletter h4 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-col.newsletter p {
+  color: #fff;
+  line-height: 29px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-col.newsletter .input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-col.newsletter input {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 20px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+
+  outline: none;
+}
+.footer-col.newsletter input:focus {
+  border-color: #f9da1f;
+}
+
+.footer-col.newsletter input::placeholder {
+  color: #999;
+  font-weight: 800;
+  font-size: large;
+}
+
+.footer-col.newsletter button {
+  background-color: #ffea00;
+  color: #000;
+  border: none;
+  padding: 14px 0;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  box-shadow: inset -4px -4px 0 #d4c200;
+  transition: all 0.3s ease;
+}
+
+.footer-col.newsletter button:hover {
+  background-color: #fdc700;
+  transform: translate(4px, 4px);
+}
+
+.footer-bottom {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto 0;
+  padding-top: 25px;
+  border-top: 3px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.footer-bottom p{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+.footer-bottom a {
+  color: #fff;
+  font-style: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #ffea00;
 }
